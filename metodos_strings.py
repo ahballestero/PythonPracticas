@@ -8,6 +8,11 @@ while age.isdigit()==False:
 if (int(age)<18):
 
     print("No puedes entrar")
+
+elif (int(age)>=100):
+
+    print("Demasiada edad me parece")
+
 else:
     
     print("Tu edad es: ",age)
