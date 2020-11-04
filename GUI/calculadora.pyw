@@ -1,11 +1,11 @@
-from tkinter import Tk,Text,Button,END,re
+from tkinter import Tk,Text,Button,END,re,PhotoImage
 
 class Interfaz:
     def __init__(self, ventana):
         #Inicializar la ventana con un título
         self.ventana=ventana
         self.ventana.title("Calculadora")
-
+        
         #Agregar una caja de texto para que sea la pantalla de la calculadora
         self.pantalla=Text(self.ventana, state="disabled", width=40, height=3, background="white", foreground="black", font=("Helvetica",15))
 
