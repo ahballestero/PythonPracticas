@@ -6,7 +6,7 @@ root.title("Ventana de pruebas")
 
 #root.resizable(0,0) #También puede ser True o False
 
-root.iconbitmap("/Users/ahbal/Desktop/Python/GUI/python.ico")
+root.iconbitmap("GUI\python.ico")
 
 #root.geometry("1024x768")
 
