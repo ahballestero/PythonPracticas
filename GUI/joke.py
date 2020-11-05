@@ -1,21 +1,46 @@
-import tkinter as tk
-from tkinter import Label
-from tkinter.constants import BOTH, LEFT, RIGHT
+from random import randrange
+from tkinter import *
+from tkinter.messagebox import showinfo
+import random
 
-root=tk.Tk()
-root.geometry("320x200")
+
+
+root=Tk()
 root.title("Si o no?")
+root.iconbitmap("GUI\python.ico")
+
+frame=Frame(root, width=800, height=600)
+frame.grid()
+
+#def botonSI():
+
+    #resultsContents = StringVar()
+    #label['textvariable'] = resultsContents
+    #resultsContents.set('Sabia que lo eras')
 
 
-label=tk.Label(root, text="Eres tontito?", font="Hack 20")
+label=Label(frame, text="Eres un pringao/a?", font="Arial 40")
+label.grid(row=0,column=0,columnspan=4, pady=70)
 
-label.pack()
+def popup_showinfo():
+    showinfo("Confirmado", "Sabia que eras un pringao/a! XD")
+
+def randomizeno(e):
+    random=randrange(-1, 300)
+    button2.place(x=random, y=random)
+    
 
 
-button1=tk.Button(root, text="SI")
-button1.pack(side=LEFT, ipadx=5, ipady=5)
-button2=tk.Button(root, text="NO")
-button2.pack(side=RIGHT,ipadx=5, ipady=5)
+button1=Button(frame, text="SI", width=12, height=2, command=popup_showinfo)
+button1.grid(row=9,column=1, padx=50,pady=10)
+
+
+button2=Button(frame, text="NO", width=12, height=2, command=randomizeno)
+button2.grid(row=9, column=3,padx=50,pady=5)
+
+button2.bind("<Enter>", randomizeno)
+
+
 
 
 
