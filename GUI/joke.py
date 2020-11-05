@@ -4,20 +4,12 @@ from tkinter.messagebox import showinfo
 import random
 
 
-
 root=Tk()
 root.title("Si o no?")
 root.iconbitmap("GUI\python.ico")
 
 frame=Frame(root, width=800, height=600)
 frame.grid()
-
-#def botonSI():
-
-    #resultsContents = StringVar()
-    #label['textvariable'] = resultsContents
-    #resultsContents.set('Sabia que lo eras')
-
 
 label=Label(frame, text="Eres un pringao/a?", font="Arial 40")
 label.grid(row=0,column=0,columnspan=4, pady=70)
@@ -39,23 +31,6 @@ button2=Button(frame, text="NO", width=12, height=2, command=randomizeno)
 button2.grid(row=9, column=3,padx=50,pady=5)
 
 button2.bind("<Enter>", randomizeno)
-
-
-
-
-
-
-
-#button1.grid(row=0, column=0)
-#button2.grid(row=15, column=0)
-
-
-
-
-
-
-
-
 
 root.mainloop()
 
