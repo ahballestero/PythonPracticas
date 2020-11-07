@@ -6,7 +6,7 @@ import random
 
 root=Tk()
 root.title("Si o no?")
-#root.iconbitmap("GUI\python.ico")
+root.iconbitmap("GUI\python.ico")
 
 frame=Frame(root, width=800, height=600)
 frame.grid()
