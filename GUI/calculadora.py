@@ -6,6 +6,9 @@ root=Tk()
 frame=Frame(root)
 frame.pack()
 
+operacion=""
+
+
 #Pantalla
 numeroPantalla=StringVar()
 screen=Entry(frame,textvariable=numeroPantalla)
@@ -16,7 +19,18 @@ screen.config(bg="black", fg="#03f943",justify=RIGHT)
 #Funcionalidades
 def numeroPulsado(num):
 
-    numeroPantalla.set(numeroPantalla.get()+num)
+    global operacion
+    
+    if operacion!="":
+        numeroPantalla.set(num)
+    else:
+        numeroPantalla.set(numeroPantalla.get()+num)
+
+def suma():
+
+    global operacion
+
+    operacion="suma"
 
 
 
@@ -63,7 +77,7 @@ buttoncom=Button(frame,text=",",width=3,command=lambda:numeroPulsado("."))
 buttoncom.grid(row=5,column=2)
 buttoneq=Button(frame,text="=",width=3)
 buttoneq.grid(row=5,column=3)
-buttonplus=Button(frame,text="+",width=3)
+buttonplus=Button(frame,text="+",width=3,command=suma)
 buttonplus.grid(row=5,column=4)
 
 
