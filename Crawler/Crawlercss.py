@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
+from urllib.parse import urljoin
+
 class PostCrawled():
 
     def __init__(self, titulo, emoticono, contenido, imagen):
@@ -14,6 +16,9 @@ class PostExtractor():
 
     def extraeInfo(self):
 
+        urlBase="http://python.beispiel.programmierenlernen.io/index.php"
+    
+
         miDoc=requests.get("http://python.beispiel.programmierenlernen.io/index.php")
     
         DocFinal=BeautifulSoup(miDoc.text, "html.parser")
@@ -25,7 +30,7 @@ class PostExtractor():
             titulo=card.select(".card-title span")[1].text #Selecciono el indice 1 del tag span que es donde esta el titulo
             emoticono=card.select_one(".emoji").text
             contenido=card.select_one(".card-text").text
-            imagen=card.select_one("img").attrs["src"]
+            imagen=urljoin(urlBase, card.select_one("img").attrs["src"])
 
             crawled=PostCrawled(titulo, emoticono, contenido, imagen)
 
