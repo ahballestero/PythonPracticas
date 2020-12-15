@@ -4,11 +4,13 @@ class Persona():
 
         return "Hablo como una persona"
 
+
 class Trabajador(Persona):
 
     def hablar(self):
 
         return "Hablo como un trabajador"
+
 
 class Director(Trabajador):
 
@@ -16,17 +18,18 @@ class Director(Trabajador):
 
         return "Hablo como un director"
 
-def hazlesHablar(listaDeLasPersonas): #parametro, no confundir con la lista de mas abajo
 
-    for persona in listaDeLasPersonas: #persona es el que tiene polimorfismo
+def hazlesHablar(listaDeLasPersonas):  # parametro, no confundir con la lista de mas abajo
+
+    for persona in listaDeLasPersonas:  # persona es el que tiene polimorfismo
         print(persona.hablar())
 
 
-Antonio=Persona()
+Antonio = Persona()
 
-Maria=Trabajador()
+Maria = Trabajador()
 
-Ana=Director()
+Ana = Director()
 
 print(Antonio.hablar())
 
@@ -36,10 +39,6 @@ print(Ana.hablar())
 
 print("-------------------------------------------------------")
 
-listaPersonas=[Antonio, Ana, Maria]
+listaPersonas = [Antonio, Ana, Maria]
 
 hazlesHablar(listaPersonas)
-
-
-
-
