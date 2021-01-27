@@ -16,14 +16,3 @@ while introducidos<11:
     introducidos+=1
 
 print(nombresPersonas)
-
-
-
-
-
-
-
-
-
-
-

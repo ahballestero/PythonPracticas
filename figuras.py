@@ -1,6 +1,7 @@
 import math
 
-option = int(input("Elige una figura: \n 1: Cuadrado \n 2: Rectángulo \n 3: Triángulo \n 4: Círculo \n"))
+option = int(input(
+    "Elige una figura: \n 1: Cuadrado \n 2: Rectángulo \n 3: Triángulo \n 4: Círculo \n"))
 
 while True:
     if option == 1:
