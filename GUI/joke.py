@@ -1,7 +1,6 @@
 from random import randrange
 from tkinter import *
 from tkinter.messagebox import showinfo
-import random
 
 
 root=Tk()
