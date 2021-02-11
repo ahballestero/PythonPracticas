@@ -1,7 +1,6 @@
 from random import randrange
 from tkinter import *
 from tkinter.messagebox import showinfo
-import random
 
 
 root=Tk()
@@ -11,11 +10,11 @@ root.iconbitmap("GUI\python.ico")
 frame=Frame(root, width=800, height=600)
 frame.grid()
 
-label=Label(frame, text="Eres un pringao/a?", font="Arial 40")
+label=Label(frame, text="Eres un pringao?", font="Arial 40")
 label.grid(row=0,column=0,columnspan=4, pady=70)
 
 def popup_showinfo():
-    showinfo("Confirmado", "Sabia que eras un pringao/a! XD")
+    showinfo("Confirmado", "Sabia que eras un pringao! XD")
 
 def randomizeno(e):
     random=randrange(-1, 300)
