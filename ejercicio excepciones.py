@@ -7,10 +7,9 @@ def agregar_a_lista(lista, nombreIntroducido):
             raise ValueError
         else:
             lista.append(nombreIntroducido)
-            print("El nombre " + "'"+nombreIntroducido+"'" +
-                  " ha sido agregado a la lista")
+            print("El nombre '",nombreIntroducido,"' ha sido agregado a la lista")
     except ValueError:
-        print("Error, el nombre '", nombreIntroducido, "'ya se ha introducido")
+        print("Error, el nombre '", nombreIntroducido, "' ya se ha introducido")
 
 
 introducidos = 1
