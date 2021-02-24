@@ -1,7 +1,6 @@
 from random import randrange
 from tkinter import *
-from tkinter.messagebox import showinfo
-
+from tkinter import messagebox
 
 root=Tk()
 root.title("Si o no?")
@@ -14,7 +13,7 @@ label=Label(frame, text="Eres un pringao?", font="Arial 40")
 label.grid(row=0,column=0,columnspan=4, pady=70)
 
 def popup_showinfo():
-    showinfo("Confirmado", "Sabia que eras un pringao! XD")
+    messagebox.showinfo("Confirmado", "Sabia que eras un pringao! XD")
 
 def randomizeno(e):
     random=randrange(-1, 300)
