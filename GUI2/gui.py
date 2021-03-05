@@ -2,9 +2,8 @@ from tkinter import *
 
 root = Tk()
 
-root.title("Ejemplo de ventana")
+root.title("Ejemplo de ventana campeón")
 
-root.iconbitmap("GUI2/python.ico")
 
 appframe = Frame()
 
