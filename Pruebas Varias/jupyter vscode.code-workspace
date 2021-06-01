@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"debug.console.fontFamily": "Hack",
+		"debug.console.fontSize": 17,
+		"editor.fontFamily": "JetBrains Mono"
+	}
+}
